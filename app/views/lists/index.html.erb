@@ -13,3 +13,8 @@
 <%= pie_chart Task.group(:list_id).count %>
 
 <%= line_chart Task.group_by_day(:created_at).count %>
+
+
+$(function() {
+  $('.datepicker').datepicker();
+});

@@ -12,6 +12,8 @@ gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 gem 'chartkick'
 gem 'groupdate'
+gem 'simple_form'
+gem 'bootstrap_form'
 
 group :development do
   gem 'better_errors'
@@ -33,4 +35,9 @@ group :test do
   gem 'poltergeist'
   gem 'launchy'
   gem 'simplecov', require: false
+end
+
+group :assets do
+  gem 'jquery-ui-rails'
+  gem 'jquery-modal-rails'
 end
