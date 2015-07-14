@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/zpaulovics/datetimepicker-rails.git
+  revision: 36d21cec5da7f5b214925804f60e63c61c747023
+  branch: master
+  submodules: true
+  specs:
+    datetimepicker-rails (4.7.16)
+      momentjs-rails (>= 2.9.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -53,7 +62,6 @@ GEM
     bootstrap-sass (3.3.5.1)
       autoprefixer-rails (>= 5.0.0.1)
       sass (>= 3.3.0)
-    bootstrap_form (2.3.0)
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -118,6 +126,8 @@ GEM
     mime-types (2.6.1)
     mini_portile (0.6.2)
     minitest (5.7.0)
+    momentjs-rails (2.10.3)
+      railties (>= 3.1)
     multi_json (1.11.2)
     netrc (0.10.3)
     nokogiri (1.6.6.2)
@@ -235,11 +245,11 @@ DEPENDENCIES
   better_errors
   binding_of_caller
   bootstrap-sass
-  bootstrap_form
   capybara
   chartkick
   coffee-rails
   database_cleaner
+  datetimepicker-rails!
   factory_girl_rails
   groupdate
   jquery-modal-rails
@@ -248,6 +258,7 @@ DEPENDENCIES
   launchy
   letter_opener
   mailgun-ruby
+  momentjs-rails
   pg
   poltergeist
   pry

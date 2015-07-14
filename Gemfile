@@ -13,7 +13,8 @@ gem 'bcrypt-ruby'
 gem 'chartkick'
 gem 'groupdate'
 gem 'simple_form'
-gem 'bootstrap_form'
+gem 'momentjs-rails'
+gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
 
 group :development do
   gem 'better_errors'

@@ -14,7 +14,4 @@
 
 <%= line_chart Task.group_by_day(:created_at).count %>
 
-
-$(function() {
-  $('.datepicker').datepicker();
-});
+<input type="text" data-provide='datepicker' >
