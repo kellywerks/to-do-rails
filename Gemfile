@@ -15,6 +15,8 @@ gem 'groupdate'
 gem 'simple_form'
 gem 'momentjs-rails'
 gem 'datetimepicker-rails', github: 'zpaulovics/datetimepicker-rails', branch: 'master', submodules: true
+gem 'jquery-ui-rails'
+gem 'jquery-modal-rails'
 
 group :development do
   gem 'better_errors'

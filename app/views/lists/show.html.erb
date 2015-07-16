@@ -21,7 +21,17 @@
 <% end %>
 </ul>
 
-<p><%= link_to "Add a task", new_list_task_path(@list), id: "new_task_link", class: "btn btn-default", remote: true %></p>
+<div id="modal" class="modal" style="display: none; ">
+  <p>
+    Hey hey hey check me out, I'm a task-adding modal!
+
+  </p>
+</div>
+
+<%=  link_to_modal "Modal", "#modal", :class=>"button" %>
+<%=  link_to_modal "New list", new_list_path, :class => "btn btn-default" %>
+
+<p><%= link_to_modal "Add a task", new_list_task_path(@list), id: "new_task_link", class: "btn btn-default", remote: true %></p>
 <p><%= link_to "Delete List", list_path(@list),
                         :data => {:confirm => "Are you sure?",
                         :method => "delete"},

@@ -10,8 +10,14 @@
 
 <%= link_to "Add list", new_list_path, :class=> "btn btn-default" %>
 
-<%= pie_chart Task.group(:list_id).count %>
-
 <%= line_chart Task.group_by_day(:created_at).count %>
 
-<input type="text" data-provide='datepicker' >
+<div id="modal" class="modal" style="display: none; ">
+  <p>
+    Hey hey hey check me out, I'm a modal with a pie chart!  Woot!
+    <%= pie_chart Task.group(:list_id).count %>
+  </p>
+</div>
+
+<%=  link_to_modal "Modal", "#modal", :class=>"button" %>
+<%=  link_to_modal "New list", new_list_path, :class => "btn btn-default" %>
